@@ -1,0 +1,233 @@
+.box1 {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    background-color: #0d5825;
+    margin-bottom: 40px;
+}
+
+.Cutata {
+    font-size: 25px;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 25px; 
+}
+
+.autor {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.card {
+    position: absolute; 
+}
+
+.card1 {
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    transform: rotate(-20deg);
+    transition: 0.5s;
+}
+
+.card2 {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    transform: rotate(-7.5deg);
+    transition: 0.5s;
+}
+
+.card3 {
+    position: absolute;
+    left: 260px;
+    top: 120px;
+    transform: rotate(7.5deg); 
+    transition: 0.5s;
+}
+
+.card1:hover{
+    transform: translateY(-50px) rotate(-20deg);
+}
+.card2:hover{
+    transform: translateY(-50px) rotate(-7.5deg);
+ }
+ .card3:hover{
+    transform: translateY(-50px) rotate(7.5deg);
+ }
+
+ .box2{
+    position: absolute; 
+ }
+
+
+ .red {
+    height: 100px;
+    width: 100px;
+    background: rgba(255, 0, 0, 0.705);
+ }
+ 
+ .blue {
+   height: 100px;
+   width: 100px;
+   z-index:2;
+   position: absolute;
+   top: 60px;
+   left: 60px;
+   background: rgb(0, 0, 255);
+ }
+ 
+ .green {
+   height: 100px;
+   width: 100px;
+   z-index: 1;
+   position: absolute;
+   top: 120px;
+   left: 120px;
+   background: rgba(0, 255, 128, 0.712);
+ }
+
+
+
+ .menu {
+    padding: 100px 10px;
+    background: gray;
+    position: relative;
+    top: 300px;
+    width: 140px;
+    backdrop-filter: blur(16px);
+    border-right: 115px solid gray;
+    left: -240px;
+    transition: 1s ease-in-out;
+ }
+
+ .Text {
+   color: white;
+   font-size: 25px;
+   opacity: 1;
+   writing-mode: vertical-lr;
+   transition: 1s;
+   text-transform: uppercase;
+   position: absolute;
+   left: 215px;
+   top: 130px;
+ }
+ 
+ .menu:hover {
+    left: 0;
+ }
+
+    .menu:hover .Text {
+      opacity: 0;
+    }
+
+
+ .list_menu {
+   position: relative;
+   width: 300px;
+   bottom: 80px;
+   font-size: 25px;
+   padding-left: 10px;
+}
+
+.list_menu li{
+   margin: 10px 0;
+}
+
+ul {
+   text-transform: uppercase;
+   list-style: none;
+}
+
+li::before {
+   position: absolute;
+   content: ""; 
+   width: 10px;
+   height: 10px;
+   background: orange; 
+   left: 20px;
+   margin: 5px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: black;
+   transform: rotate(45deg);
+}
+
+ .home, .About, .Contacts, .News, .Our, .Faq {
+    color: white;
+    transition: 1s ease-in-out;
+    text-decoration: none;
+    
+ }
+
+ .home:hover {
+    color: gold;
+ }
+
+ .About:hover {
+    color: gold;
+ }
+
+ .Contacts:hover {
+    color: gold;
+ }
+
+ .News:hover {
+    color: gold;
+ }
+
+ .Our:hover {
+    color: gold;
+ }
+
+ .Faq:hover {
+    color: gold;
+ }
+
+
+ .block4 {
+   width: 300px;
+   height: 300px;
+   position: absolute;
+   top: 1500px;
+ }
+
+ .block5 {
+   width: 100px;
+   height: 100px;
+   background: red;
+   display: flex;
+   animation-name: move-circle;
+   animation-duration: 5s ;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite; 
+ }
+
+ @keyframes  move-circle {
+   0%{
+      transform: translateX(0) translateY(0);
+   }
+
+   25%{
+      transform: translateY(200%);
+      background: blue;
+   }
+
+   50%{
+      transform: translateX(200%) translateY(200%);
+      background: green;
+   }
+
+   75%{
+      transform: translateX(200%) translateY(0);
+      background: yellow;
+   }
+
+   100%{
+      transform: translateX(0) translateY(0);
+      background: red;
+   }
+ }
